@@ -29,5 +29,30 @@
 
 .header .logo{
     position: relative;
-    max-width: 100px;
+    max-width: 130px;
+}
+
+.header ul{
+    position: relative;
+    display: flex;
+}
+
+.header ul li{
+    list-style: none;
+}
+
+.header ul li a{
+    display: inline-block;
+    color: #333;
+    font-size: 1.2em;
+    font-weight: 400px;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.header ul li a:hover{
+    color: rgb(0, 90, 5);
+    font-size: 1.6em;
+    font-weight: 500;
+    transition: .5s;
 }
