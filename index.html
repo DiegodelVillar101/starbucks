@@ -8,6 +8,7 @@
 </head>
 <body>
     <section class="container">
+        <div class="circle"></div>
         <header class="header">
 
             <a href="#" class="logo"><img src="./img/logo.png" alt=""></a>
@@ -33,9 +34,9 @@
             </div>
         </div>
         <ul class="thumb">
-            <li><img src="./img/thumb1.png" alt=""></li>
-            <li><img src="./img/thumb2.png" alt=""></li>
-            <li><img src="./img/thumb3.png" alt=""></li>
+            <li><img src="./img/thumb1.png" onclick="imgslider('./img/img1.png');changecirclecolor('#017143')" alt=""></li>
+            <li><img src="./img/thumb2.png" onclick="imgslider('./img/img2.png');changecirclecolor('#eb7495')" alt=""></li>
+            <li><img src="./img/thumb3.png" onclick="imgslider('./img/img3.png');changecirclecolor('#d752b1')" alt=""></li>
         </ul>
         <ul class="sn">
             <li><a href="#"><img src="./img/facebook.png" alt="Facebook"></a></li>
@@ -43,6 +44,17 @@
             <li><a href="#"><img src="./img/twitter.png" alt="Twitter"></a></li>
         </ul>
     </section>
+
+    <script type="text/javascript">
+        function imgslider(anything){
+            document.querySelector('.coffe').src = anything;
+        }
+
+        function changecirclecolor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color
+        }
+    </script>
 
 </body>
 </html>
