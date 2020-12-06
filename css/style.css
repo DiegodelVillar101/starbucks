@@ -5,7 +5,7 @@
     font-family: sans-serif;
 }
 
-.section{
+.container{
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -55,4 +55,57 @@
     font-size: 1.6em;
     font-weight: 500;
     transition: .5s;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textbx{
+    position: relative;
+    max-width: 600px;
+}
+
+.textbx h2{
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .textbx h2 span {
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 850;
+}
+
+.content .textbx p{
+    color: #333;
+    font-size: 1.2em;
+}
+
+.content .textbx a{
+    color: #fff;
+    background: #017143;
+    font-size: 1.2em;
+    font-weight: 300;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 22px;
+    border-radius: 30px;
+    padding: 12px 22px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    
+}
+
+.content .textbx a:hover{
+    color: #017143;
+    background: #fff;
+    border: 3px solid #017143;
+    font-weight: 600;
 }
